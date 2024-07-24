@@ -1,78 +1,150 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>首頁 - Muji Spa Pet</title>
-    <script src="index.js"defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+  <title>首頁 - Muji Spa Pet</title>
+  <script src="index.js" defer></script>
 </head>
+
 <body>
-    <header class="header">
-        <div class="container header-inner">
-            <a href="#" class="logo">
-              <img src="./assets/logo.png" width="180px" height="140px" alt="muji">
-            </a>
-          <input type="checkbox" name="" id="menu-control" class="menu-control">
-          <label for="menu-control" class="menu-btn">
-            <svg class="menu-icon open" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368">
-              <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
-            </svg>
-            <svg class="menu-icon close" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
-          </label>
-        
-            <ul class="menu">
-              <li class="menu-list"><a href="./index.html">首頁</a></li>
-              <li class="menu-list"><a href="./serviceitem.html">服務項目</a></li>
-              <li class="menu-list"><a href="./project.html">品牌使用介紹</a></li>
-              <li class="menu-list"><a href="#">環境介紹</a></li>
-            </ul>
-        </div>
-      </header>
-      <div class="banner">
-        <div class="banner-contanct">
-          <div class="banner-box">
-            <div class="banner-inner">
-              <h1>Muji寵物美容</h1>
-              <p>明亮乾淨的美容室</p>
-              <p>清楚看見毛孩的美容狀況</p>
-              <p>使用頂級草本精華萃取洗劑</p>
-              <p>乾淨舒適的開放式空間</p>
-            </div>
-            <div class="banner-image">
-              <img id="petide"src="./assets/petideimg.jpg" alt="pet">
-            </div>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="#" class="logo">
+        <img src="./assets/logo.png" width="180px" height="140px" alt="muji">
+      </a>
+      <input type="checkbox" name="" id="menu-control" class="menu-control">
+      <label for="menu-control" class="menu-btn">
+        <svg class="menu-icon open" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+          width="24px" fill="#5f6368">
+          <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+        </svg>
+        <svg class="menu-icon close" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+          width="24px" fill="#5f6368">
+          <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+        </svg>
+      </label>
+
+      <ul class="menu">
+        <li class="menu-list"><a href="./index.html">首頁</a></li>
+        <li class="menu-list"><a href="./serviceitem.html">服務項目</a></li>
+        <li class="menu-list"><a href="./project.html">品牌使用介紹</a></li>
+        <li class="menu-list"><a href="#">環境介紹</a></li>
+      </ul>
+    </div>
+  </header>
+  <div class="banner">
+    <div class="banner-contanct">
+      <div class="banner-box">
+        <div class="banner-inner">
+          <h1>Muji寵物住宿</h1>
+          <p>開放式透明空間</p>
+          <p>使用頂級草本精華萃取洗劑</p>
+          <p>美容師專屬一對一服務</p>
+          <button class="btn">住宿安親須知</button>
+          <div class="dialog">
+            <div class="closeDialog">X</div>
+            <h3>沐居寵物安親住宿須知</h3>
+            <ol>
+              <li>
+                <p>入住與退房開放時間 <span>AM09:00~PM08:00</span></p>
+                <p>住宿費用以 24H/日為計算，EX: 10:00 入住至隔日 10:00 帶回，為一日費用計算，超出時間則以
+                  安親計費；如<span>超過退房時間，請於隔日接回，並加一日住宿費用。</span>
+              <li>
+                第一次住宿前，毛寶貝必須安親(不可與住宿當天為同一日)
+                以讓毛寶貝適應環境以及評估是否適合住宿。
+              </li>
+              <li>
+                為預防棄養，首次住宿時請提供<span class="span1">身份證影本</span>；
+                若您超過約定安親住宿時間後的 48 小時仍未接回您的寵物，且無聯絡本店、聯絡不上等情形，
+                本店將視為棄養並通知相關單位處理，飼主須承擔必要之法律責任。
+              </li>
+              <li>
+                建議攜帶毛寶貝平日習慣之<span class="span1">睡墊、棉被</span>，讓寵物更快適應新環境。
+                因狗狗轉換食物容易有腹瀉、拉肚子的情形，建議住宿<span class="span1">自備食物</span>
+                <span>需要散步服務請自備</span><span class="span1">牽繩及胸背帶、防蚤噴霧</span><span>(或由本店提供加價 50 元/天)</span>。
+              </li>
+              <li>
+                本店為半開放的空間，若毛寶貝有抬腿踩尿等習慣或騎乘的動作，會為毛寶貝穿上尿布，將定
+                時檢查是否需更換。穿戴尿布會有皮膚摩擦的現象，出現些為紅腫為正常現象。
+              </li>
+              <li>
+                <span>未完成預防針注射或是注射後七日內抵抗力較差的寵物恕無法安親住宿</span>。
+                寵物入店前需已進行防蚤與驅蟲(告知前次投藥日期)，若於寵物身上或排泄物中發現任何蟲體，
+                本店將通知飼主進行除蚤並即時隔離，於必要時請飼主帶回。
+              </li>
+              <li>
+                填寫寵物資料表時請誠實敘述寵物之疾病史及健康狀況，以利本店提供適切的照顧，有以下情
+                況【未斷奶】【跳蚤、壁蝨】【傳染性疾病】【特殊疾患】【攻擊行為】【破壞行為】【過度
+                焦慮】【吠叫不止】【發情中】【懷孕中】者，未提供住宿服務。
+              </li>
+              <li>
+                入住寵物須有良好體況、體徵，需近一周內洗過澡，建議飼主先洗澡後再入住；
+                如有<span>體況不佳的狀況，為維護住宿品質，將要求經過洗澡整理後才能入住或安親</span>。
+              </li>
+              <li>
+                每隻寵物性情皆不同，若您的寵物較為害羞，或在本店期間有攻擊行為，我們將先與您溝通，
+                並於必要時進行隔離。
+              </li>
+              <li>
+                於店家友善照護下，飼主應完全負責因寵物自身行為與健康狀況造成的風險、服務人員與其他
+                寵物因寵物攻擊而受傷、店家營業工具因寵物毀損之賠償責任。
+              </li>
+              <li>
+                本店對下列事由所致之損失不負損害賠償責任，
+                <span>請飼主自行評估毛寶貝身體狀況:</span>
+              </li>
+              <ul>
+                <li>年老壽終正寢等風險。</li>
+                <li>因本身固有疾病或現有疾病直接或是間接引起的傷亡。</li>
+                <li>因不可歸責於旅館之事引發的固有疾病或是現有疾病。</li>
+              </ul>
+
+            </ol>
+
           </div>
         </div>
-        <img class= "decorate paw1" src="./assets/paw1.png" alt="paw1">
-        <img class= "decorate paw2" src="./assets/paw2.png" alt="paw2">
-        <img class= "decorate paw3" src="./assets/paw1.png" alt="paw3">
-        <img class= "decorate paw4" src="./assets/paw2.png" alt="paw4">
-        <img class= "decorate paw5" src="./assets/paw1.png" alt="paw5">
-        <img class= "decorate paw6" src="./assets/paw2.png" alt="paw6">
-      </div>
-      <div class="footer">
-        <div class="container footer-inner">
-            <div class="footer-contant">
-                <h2><a href="#"><img src="./assets/logo.png" alt="logo"></a></h2>
-                <p>若有美容相關和產品相關問題</p><br/>
-                <p>直接與我聯絡！</p>
-                <span><a href="#">Line : @136iopcd</a></span>
-            </div>
-            <div class="footer-social">
-                <ul>
-                  <li>
-                    <a class="footer-social-lineicon"href="https://liff.line.me/1645278921-kWRPP32q/?accountId=136iopcd"><img src="./assets/lineicon.svg" alt="mujiline">Muji 官方Line</a>
-                  </li>
-                    <li>
-                        <a class="footer-social-active "href="https://www.facebook.com/profile.php?id=100063819772668&mibextid=LQQJ4d"><img src="./assets/facebook.svg" alt="mujifb">Muji Facebook</a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/muji_pet_spa?igsh=MXJpb2sxMnMwcGp4Yg=="><img src="./assets/instagram.svg" alt="mujiig">Muji Instergram</a>
-                    </li>
-                </ul>
-            </div>
+        <div class="banner-image">
+          <img id="petide" src="./assets/MUJI04.jpg" alt="pet">
         </div>
       </div>
+    </div>
+    <img class="decorate paw1" src="./assets/paw1.png" alt="paw1">
+    <img class="decorate paw2" src="./assets/paw2.png" alt="paw2">
+    <img class="decorate paw3" src="./assets/paw1.png" alt="paw3">
+    <img class="decorate paw4" src="./assets/paw2.png" alt="paw4">
+  </div>
+  <div class="footer">
+    <div class="container footer-inner">
+      <div class="footer-contant">
+        <h2><a href="#"><img src="./assets/logo.png" alt="logo"></a></h2>
+        <p>若有美容相關和產品相關問題</p><br />
+        <p>直接與我聯絡！</p>
+        <span><a href="#">Line : @136iopcd</a></span><br />
+        <span><a href="https://maps.app.goo.gl/n4Zvwi8KHcMQVnZNA">地址 : 台南市新營區中正路500巷86號</a></span>
+      </div>
+      <div class="footer-social">
+        <ul>
+          <li>
+            <a class="footer-social-lineicon" href="https://liff.line.me/1645278921-kWRPP32q/?accountId=136iopcd"><img
+                src="./assets/lineicon.svg" alt="mujiline">Muji 官方Line</a>
+          </li>
+          <li>
+            <a class="footer-social-active "
+              href="https://www.facebook.com/profile.php?id=100063819772668&mibextid=LQQJ4d"><img
+                src="./assets/facebook.svg" alt="mujifb">Muji Facebook</a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/muji_pet_spa?igsh=MXJpb2sxMnMwcGp4Yg=="><img src="./assets/instagram.svg"
+                alt="mujiig">Muji Instergram</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </body>
+
 </html>

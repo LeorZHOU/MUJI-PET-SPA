@@ -1,97 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="project1.css">
-    <title>使用產品介紹 - Muji Spa Pet</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="reset.css" />
+  <link rel="stylesheet" href="project1.css" />
+  <title>品牌產品介紹 - Muji Spa Pet</title>
 </head>
+
 <body>
-    <header class="header">
-        <div class="container header-inner">
-      
-            <a href="#" class="logo">
-              <img src="./assets/logo.png" width="180px" height="140px" alt="muji">
-            </a>
-          <input type="checkbox" name="" id="menu-control" class="menu-control">
-          <label for="menu-control" class="menu-btn">
-            <svg class="menu-icon open" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368">
-              <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
-            </svg>
-            <svg class="menu-icon close" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
-          </label>
-        
-            <ul class="menu">
-              <li class="menu-list"><a href="./index.html">首頁</a></li>
-              <li class="menu-list"><a href="./serviceitem.html">服務項目</a></li>
-              <li class="menu-list"><a href="./project.html">品牌使用介紹</a></li>
-              <li class="menu-list"><a href="#">環境介紹</a></li>
-            </ul>
-        </div>
-      </header>
-      <div class="container-contant">
-        <!-- <h1>產品介紹</h1> -->
-        <ul class="card-group">
-            <li class="card">
-            <img src="./assets/GREEN.png" alt="綠茶護膚潔乳霜">
-            <h2>綠茶護膚潔乳霜</h2>
-            <p>溫和去除皮膚表面髒污，滋養與保濕</p>
-            <ul class="tags">
-              <li class="tag">軟化角質</li>
-              <li class="tag">清潔皮膚</li>
-            </ul>
-            </li>
-              <li class="card">
-                <img src="./assets/YELLOW.png" alt="桂花修護清潔乳霜">
-            <h2>桂花修護清潔乳霜</h2>
-            <p>去除皮膚髒污/滋養與保濕
-            </p>
-            <ul class="tags">
-              <li class="tag">軟化角質</li>
-              <li class="tag">清潔皮膚</li>
-            </ul>
-            </li>
-            <li class="card">
-                <img src="./assets/jiuo600.png" alt="植萃賦活精華油">
-            <h2>植萃賦活精華油</h2>
-            <p>皮毛保健、維持皮毛良好狀態/保濕與護膚</p>
-             <ul class="tags">
-              <li class="tag">皮毛保濕</li>
-              <li class="tag">皮毛保油</li>
-            </ul>
-            </li>
-            <li class="card">
-                <img src="./assets/ul.png" alt="尤加利潔淨精華露">
-            <h2>尤加利潔淨精華露</h2>
-            <p>溫和去除皮膚污垢，維持皮毛良好狀態、達到水潤、皮毛保健</p>
-             <ul class="tags">
-              <li class="tag">清潔皮膚</li>
-            </ul>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="#" class="logo">
+        <img src="./assets/logo.png" width="180px" height="140px" alt="muji" />
+      </a>
+      <input type="checkbox" name="" id="menu-control" class="menu-control" />
+      <label for="menu-control" class="menu-btn">
+        <svg class="menu-icon open" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+          width="24px" fill="#5f6368">
+          <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+        </svg>
+        <svg class="menu-icon close" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+          width="24px" fill="#5f6368">
+          <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+        </svg>
+      </label>
+
+      <ul class="menu">
+        <li class="menu-list"><a href="./index.html">首頁</a></li>
+        <li class="menu-list"><a href="./serviceitem.html">服務項目</a></li>
+        <li class="menu-list"><a href="./project.html">品牌使用介紹</a></li>
+        <li class="menu-list"><a href="#">環境介紹</a></li>
+      </ul>
+    </div>
+  </header>
+  <div class="container-contant">
+    <div class="card-brand-introduction">
+      <h1>品牌使用介紹</h1>
+      <img src="./assets/08.png" alt="project">
+      <h2>全系列升級Moro皮毛養護專業品牌</h2>
+      <p>|健康養膚，柔順毛髮|</p>
+      <p>不添加合成，化學定香劑</p>
+      <p>選用頂級草笨萃取，以最溫和的方式</p>
+      <p>搭配自然沐浴手法，平衡肌膚PH值</p>
+      <p>改善肌膚問題並達到長期養護的最好選擇</p>
+      <p>正確洗浴觀念，專業知識手法</p>
+    </div>
+    <h3>產品介紹</h3>
+    <ul class="card-group">
+      <li class="card">
+        <img src="./assets/p1.jpg" alt="深層修護乳霜" />
+        <h2>深層修護乳霜</h2>
+        <p>可恢復犬貓洗澡被沖洗掉的油脂等防護網<br />
+          並可防止靜電產生，讓毛髮易梳理不易打結
+        <ul class="tags">
+          <li class="tag">去除異味</li>
+          <li class="tag">皮毛保濕</li>
+          <li class="tag">皮毛保油</li>
+        </ul>
+      </li>
+      <li class="card">
+        <img src="./assets/p2.jpg" alt="金盞花保濕乳霜" />
+        <h2>金盞花保濕乳霜</h2>
+        <p>初期護理的毛孩，加強補充水份。它能使毛髮蓬鬆</p><br />
+        <ul class="tags">
+          <li class="tag">皮毛保濕</li>
+          <li class="tag">毛髮蓬鬆</li>
+        </ul>
+      </li>
+      <li class="card">
+        <img src="./assets/p3.jpg" alt="高單位防護精華乳霜" />
+        <h2>高單位防護精華乳霜</h2>
+        <p>對皮膚及毛髮有極佳的保濕效果</p>
+        <ul class="tags">
+          <li class="tag">皮毛保濕</li>
+          <li class="tag">防止肌膚乾燥</li>
+        </ul>
+      </li>
+      <li class="card">
+        <img src="./assets/p4.jpg" alt="3.8高效調理精華乳霜" />
+        <h2>3.8高效調理精華乳霜</h2>
+        <p>有去除異味、清潔等功能</p>
+        <ul class="tags">
+          <li class="tag">去除異味</li>
+          <li class="tag">清潔皮膚</li>
+        </ul>
+      </li>
+      <li class="card">
+        <img src="./assets/p5.jpg" alt="金盞花保濕洗毛精" />
+        <h2>金盞花保濕洗毛精</h2>
+        <p>具有控制油脂分泌、保護毛髮，可減緩皮膚刺激</p>
+        <ul class="tags">
+          <li class="tag">皮毛保濕</li>
+          <li class="tag">毛髮蓬鬆</li>
+          <li class="tag">平衡油水</li>
+        </ul>
+      </li>
+
+      <li class="card">
+        <img src="./assets/jiuo600.png" alt="植萃賦活精華油" />
+        <h2>植萃賦活精華油</h2>
+        <p>皮毛保健、維持皮毛良好狀態/保濕與護膚</p>
+        <ul class="tags">
+          <li class="tag">皮毛保濕</li>
+          <li class="tag">皮毛保油</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <div class="footer">
+    <div class="container footer-inner">
+      <div class="footer-contant">
+        <h2>
+          <a href="#"><img src="./assets/logo.png" alt="logo" /></a>
+        </h2>
+        <p>若有美容相關和產品相關問題</p>
+        <br />
+        <p>直接與我聯絡！</p>
+        <span><a href="#">Line : @136iopcd</a></span><br />
+        <span><a href="https://maps.app.goo.gl/n4Zvwi8KHcMQVnZNA">地址 : 台南市新營區中正路500巷86號</a></span>
+      </div>
+      <div class="footer-social">
+        <ul>
+          <li>
+            <a class="footer-social-lineicon" href="https://liff.line.me/1645278921-kWRPP32q/?accountId=136iopcd"><img
+                src="./assets/lineicon.svg" alt="mujiline" />Muji 官方Line</a>
+          </li>
+          <li>
+            <a class="footer-social-active"
+              href="https://www.facebook.com/profile.php?id=100063819772668&mibextid=LQQJ4d"><img
+                src="./assets/facebook.svg" alt="mujifb" />Muji Facebook</a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/muji_pet_spa?igsh=MXJpb2sxMnMwcGp4Yg=="><img src="./assets/instagram.svg"
+                alt="mujiig" />Muji Instergram</a>
           </li>
         </ul>
       </div>
-      <div class="footer">
-        <div class="container footer-inner">
-            <div class="footer-contant">
-                <h2><a href="#"><img src="./assets/logo.png" alt="logo"></a></h2>
-                <p>若有美容相關和產品相關問題</p><br/>
-                <p>直接與我聯絡！</p>
-                <span><a href="#">Line : @136iopcd</a></span>
-            </div>
-            <div class="footer-social">
-                <ul>
-                    <li>
-                        <a class="footer-social-lineicon"href="https://liff.line.me/1645278921-kWRPP32q/?accountId=136iopcd"><img src="./assets/lineicon.svg" alt="mujiline">Muji 官方Line</a>
-                    </li>
-                    <li>
-                        <a class="footer-social-active "href="https://www.facebook.com/profile.php?id=100063819772668&mibextid=LQQJ4d"><img src="./assets/facebook.svg" alt="mujifb">Muji Facebook</a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/muji_pet_spa?igsh=MXJpb2sxMnMwcGp4Yg=="><img src="./assets/instagram.svg" alt="mujiig">Muji Instergram</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-      </div>
+    </div>
+  </div>
 </body>
+
 </html>

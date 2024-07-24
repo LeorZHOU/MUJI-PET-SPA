@@ -1,72 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>首頁 - Muji Spa Pet</title>
-    <script src="index.js"defer></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="reset.css" />
+  <link rel="stylesheet" href="serviceitem.css" />
+  <title>服務項目 - Muji Spa Pet</title>
+  <script src="serviceitem.js" defer></script>
 </head>
+
 <body>
-    <header class="header">
-        <div class="container header-inner">
-            <a href="#" class="logo">
-              <img src="./assets/logo.png" width="180px" height="140px" alt="muji">
-            </a>
-          <input type="checkbox" name="" id="menu-control" class="menu-control">
-          <label for="menu-control" class="menu-btn">
-            <svg class="menu-icon open" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368">
-              <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
-            </svg>
-            <svg class="menu-icon close" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
-          </label>
-        
-            <ul class="menu">
-              <li class="menu-list"><a href="./index.html">首頁</a></li>
-              <li class="menu-list"><a href="./serviceitem.html">服務項目</a></li>
-              <li class="menu-list"><a href="./project.html">品牌使用介紹</a></li>
-              <li class="menu-list"><a href="#">環境介紹</a></li>
-            </ul>
-        </div>
-      </header>
-      <div class="banner">
-        <div class="banner-contanct">
-          <div class="banner-box">
-            <div class="banner-inner">
-              <h1>Muji寵物美容</h1>
-              <p>明亮乾淨的美容室</p>
-              <p>清楚看見毛孩的美容狀況</p>
-              <p>使用頂級草本精華萃取洗劑</p>
-              <p>乾淨舒適的開放式空間</p>
-            </div>
-            <div class="banner-image">
-              <img id="petide"src="./assets/petideimg.jpg" alt="pet">
-            </div>
-          </div>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="#" class="logo">
+        <img src="./assets/logo.png" width="180px" height="140px" alt="muji" />
+      </a>
+      <input type="checkbox" name="" id="menu-control" class="menu-control" />
+      <label for="menu-control" class="menu-btn">
+        <svg class="menu-icon open" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+          width="24px" fill="#5f6368">
+          <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+        </svg>
+        <svg class="menu-icon close" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+          width="24px" fill="#5f6368">
+          <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+        </svg>
+      </label>
+
+      <ul class="menu">
+        <li class="menu-list"><a href="./index.html">首頁</a></li>
+        <li class="menu-list"><a href="./serviceitem.html">服務項目</a></li>
+        <li class="menu-list"><a href="./project.html">品牌使用介紹</a></li>
+        <li class="menu-list"><a href="#">環境介紹</a></li>
+      </ul>
+    </div>
+  </header>
+  <div class="banner">
+    <div class="banner-contanct">
+      <div class="banner-box">
+        <div class="banner-inner"></div>
+        <div class="banner-image">
+          <img id="petide" src="./assets/serviceimg/001.png" alt="pet" />
         </div>
       </div>
-      <div class="footer">
-        <div class="container footer-inner">
-            <div class="footer-contant">
-                <h2><a href="#"><img src="./assets/logo.png" alt="logo"></a></h2>
-                <p>若有美容相關和產品相關問題</p><br/>
-                <p>直接與我聯絡！</p>
-                <span><a href="#">@136iopcd</a></span>
-            </div>
-            <div class="footer-social">
-                <ul>
-                  <li>
-                    <a class="footer-social-lineicon"href="https://liff.line.me/1645278921-kWRPP32q/?accountId=136iopcd"><img src="./assets/lineicon.svg" alt="mujiline">Muji 官方Line</a>
-                  </li>
-                    <li>
-                        <a class="footer-social-active "href="https://www.facebook.com/profile.php?id=100063819772668&mibextid=LQQJ4d"><img src="./assets/facebook.svg" alt="mujifb">Muji Facebook</a>
-                    </li>
-                    <li>
-                        <a href="https://www.instagram.com/muji_pet_spa?igsh=MXJpb2sxMnMwcGp4Yg=="><img src="./assets/instagram.svg" alt="mujiig">Muji Instergram</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+      <div class="banner-item">
+        <h3>寵物美容服務項目</h3>
+        <ul>
+          <li>
+            <h5>基礎美容</h5>
+            <p>✦ 剪指甲、剃毛(腳底.腹部.屁屁)</p>
+            <p>✦ 使用MORO毛柔不添加化學定香劑</p>
+            <p>✦ 選用頂級的草本萃取精華</p>
+            <p>✦ 清潔乳霜和自然沐浴手法</p>
+            <p>✦ 平衡肌膚PH值</p>
+          </li>
+          <li>
+            <h5>皮毛調理spa</h5>
+            <p>✦ 溫和去除皮膚髒污</p>
+            <p>✦ 活膚代謝 保濕鎮定</p>
+            <p>✦ 平衡肌膚油脂水分</p>
+            <p>✦ 提升皮膚修復再生能力</p>
+            <p>✦ 改善皮膚粗糙敏感問題</p>
+          </li>
+          <li>
+            <h5>住宿安親服務</h5>
+            <p>乾淨舒適的開放式空間</p>
+          </li>
+        </ul>
       </div>
+    </div>
+    <img class="decorate paw1" src="./assets/paw1.png" alt="paw1" />
+    <img class="decorate paw2" src="./assets/paw2.png" alt="paw2" />
+    <img class="decorate paw3" src="./assets/paw1.png" alt="paw3" />
+    <img class="decorate paw4" src="./assets/paw2.png" alt="paw4" />
+  </div>
+  <div class="footer">
+    <div class="container footer-inner">
+      <div class="footer-contant">
+        <h2>
+          <a href="#"><img src="./assets/logo.png" alt="logo" /></a>
+        </h2>
+        <p>若有美容相關和產品相關問題</p>
+        <br />
+        <p>直接與我聯絡！</p>
+        <span><a href="#">Line : @136iopcd</a></span><br />
+        <span><a href="https://maps.app.goo.gl/n4Zvwi8KHcMQVnZNA">地址 : 台南市新營區中正路500巷86號</a></span>
+      </div>
+      <div class="footer-social">
+        <ul>
+          <li>
+            <a class="footer-social-lineicon" href="https://liff.line.me/1645278921-kWRPP32q/?accountId=136iopcd"><img
+                src="./assets/lineicon.svg" alt="mujiline" />Muji
+              官方Line</a>
+          </li>
+          <li>
+            <a class="footer-social-active"
+              href="https://www.facebook.com/profile.php?id=100063819772668&mibextid=LQQJ4d"><img
+                src="./assets/facebook.svg" alt="mujifb" />Muji
+              Facebook</a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/muji_pet_spa?igsh=MXJpb2sxMnMwcGp4Yg=="><img src="./assets/instagram.svg"
+                alt="mujiig" />Muji
+              Instergram</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </body>
+
 </html>
