@@ -14,8 +14,6 @@ body {
     display: flex;
     align-items: center;
     flex-wrap:wrap;
-    padding-top: 8px;
-    padding-bottom: 8px;
   }
   @media(max-width:992px){
     .header-inner{
