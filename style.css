@@ -443,8 +443,8 @@ body {
   .footer-inner{
     display: flex;
     justify-content: space-between;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     align-items: center;
   }
   .footer-inner-right{
@@ -452,9 +452,6 @@ body {
   }
   .footer-contant p, .footer-logo span{
     font-size: 20px;
-  }
-  .footer-contant h2{
-    margin-bottom: 24px;
   }
   .footer-contant p{
     line-height: 30px;
@@ -471,20 +468,21 @@ body {
     }
     .footer-contant{
         text-align: center;
-        margin-bottom: 60px;
+        margin-bottom: 30px;
+        margin-top: 10px;
     }
   }
   .footer-social a{
     width: 306px;
     padding: 8px 24px;
     border-radius: 8px;
-    margin-bottom: 24px;
     display: block;
     line-height: 30px;
-    font-size : 20px;
+    font-size : 16px;
     font-weight: 400;
     color: #3b3b3b;
     text-align: center;
+    
   }
   .footer-social img{
     vertical-align: middle;
@@ -496,3 +494,5 @@ body {
   .footer-social a:hover{
     background: #d8d5d5;;
   }
+
+
