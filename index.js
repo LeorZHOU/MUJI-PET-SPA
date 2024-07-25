@@ -1,16 +1,18 @@
-// let petide = document.querySelector("#petide");
+document.addEventListener('DOMContentLoaded', () => {
+    const menuBtn = document.getElementById('menu-btn');
+    const menu = document.getElementById('menu');
+    const openIcon = menuBtn.querySelector('.open');
+    const closeIcon = menuBtn.querySelector('.close');
 
-// petide.addEventListener("mouseover", () => {
-//   let myImgSrc = petide.getAttribute("src"); // Get the current src attribute value
+    menuBtn.addEventListener('click', () => {
+        menu.classList.toggle('show');
+        openIcon.classList.toggle('hide');
+        closeIcon.classList.toggle('show');
+    });
+});
 
-//   if (myImgSrc === "./assets/petideimg.jpg") {
-//     petide.setAttribute("src", "./assets/petideimg2.jpg"); // Set the new src attribute
-//   } else if (myImgSrc === "./assets/petideimg2.jpg") {
-//     petide.setAttribute("src", "./assets/petideimg3.jpg");
-//   } else {
-//     petide.setAttribute("src", "./assets/petideimg.jpg");
-//   }
-// });
+
+
 let petide = document.querySelector("#petide");
 
 function changeImage() {

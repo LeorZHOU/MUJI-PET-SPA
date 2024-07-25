@@ -1,138 +1,140 @@
-html, body {
-    overflow-x: hidden;
-}
-
 * {
   box-sizing: border-box;
 }
 body {
     padding-top: 180px;
-    font-family: "Arial","LiHei Pro","黑體-繁","微軟正黑體", sans-serif;
-  }
+    font-family: "Arial", "LiHei Pro", "黑體-繁", "微軟正黑體", sans-serif;
+}
 
 .header {
-  background: #fff;
-  border-bottom: 1px solid #f1f1f1;
-  position: fixed;
-  top: 0;
-  z-index: 10;
-  width: 100%;
-  height: auto;
+    background: #fff;
+    border-bottom: 1px solid #F1F1F1;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    width: 100%;
 }
 
 .header-inner {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
 }
-.container .header-inner .logo{
-  max-width: 100%;
-  height: auto;
+
+@media(max-width: 992px) {
+    .header-inner {
+        justify-content: space-between;
+    }
 }
-@media (max-width: 992px) {
-  .header-inner {
-    justify-content: space-between;
-  }
-}
+
 .container {
-  max-width: 1296px;
-  margin: 0 auto;
+    max-width: 1296px;
+    margin: 0 auto;
 }
-@media (max-width: 1295px) {
-  .container {
-    padding-left: 12px;
-    padding-right: 12px;
-  }
+
+@media(max-width: 1295px) {
+    .container {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
 }
+
 .logo {
-  margin-right: 318px;
+    margin-right: 318px;
 }
-@media (max-width: 992px) {
-  .logo {
-    margin-right: 0px;
-  }
+
+@media(max-width: 992px) {
+    .logo {
+        margin-right: 0px;
+    }
 }
+
 .menu {
-  display: flex;
-  gap: 40px;
+    display: flex;
+    gap: 40px;
 }
 
 .menu .menu-list a {
-  color: #000;
-  font-size: 16px;
-  line-height: 1.5;
-  font-weight: bold;
-  text-decoration: none;
-  padding: 4px 8px;
-  position: relative;
+    color: #000;
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 4px 8px;
+    position: relative;
 }
 
 .menu .menu-list a::before,
 .menu .menu-list a::after {
-  content: ' ';
-  position: absolute;
-  width: 5px;
-  height: 5px;
-  border: 1px solid #919191;
-  opacity: 0;
-  -webkit-box-reflect: below 16px; /* 映射效果*/
-  text-align: center;
+    content: " ";
+    position: absolute;
+    width: 5px;
+    height: 5px;
+    border: 1px solid #919191;
+    opacity: 0;
+    -webkit-box-reflect: below 16px;
+    text-align: center;
 }
 
 .menu .menu-list a::before {
-  top: 0;
-  left: 0;
-  border-right: none;
-  border-bottom: none;
+    top: 0;
+    left: 0;
+    border-right: none;
+    border-bottom: none;
 }
 
 .menu .menu-list a::after {
-  top: 0;
-  right: 0;
-  border-left: none;
-  border-bottom: none;
+    top: 0;
+    right: 0;
+    border-left: none;
+    border-bottom: none;
 }
 
 .menu .menu-list a:hover::before,
 .menu .menu-list a:hover::after {
-  opacity: 1;
+    opacity: 1;
 }
-.menu-btn {
-  display: none;
-  cursor: pointer;
-}
-.menu-btn .menu-icon {
-  display: none;
-}
-.menu-control:checked + .menu-btn .open {
-  display: none;
-}
-.menu-control:checked + .menu-btn .close {
-  display: inline;
-}
-.menu-control:not(:checked) + .menu-btn .open {
-  display: inline;
-}
-.menu-control:not(:checked) + .menu-btn .close {
-  display: none;
-}
-.menu-control {
-  display: none;
-}
-@media (max-width: 992px) {
-  .menu-btn {
-    display: block;
-  }
-  .menu {
-    display: none;
-  }
 
-  .menu-control:checked ~ .menu {
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    align-items: center;
-  }
+.menu-btn {
+    display: none;
+    cursor: pointer;
+}
+
+.menu-btn .menu-icon {
+    display: inline;
+}
+
+.menu-btn .close {
+    display: none;
+}
+
+@media (max-width: 992px) {
+    .menu-btn {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .menu.show {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-btn .open {
+        display: inline;
+    }
+
+    .menu-btn .close.show {
+        display: inline;
+    }
+
+    .menu-btn .open.hide {
+        display: none;
+    }
 }
 /* container-contant */
 .container-contant {
@@ -275,16 +277,6 @@ body {
 
 a {
   text-decoration: none;
-}
-.container {
-  max-width: 1296px;
-  margin: 0 auto;
-}
-@media (max-width: 1295px) {
-  .container {
-    padding-left: 12px;
-    padding-right: 12px;
-  }
 }
 .footer {
   background-image: url('./assets/footer-bg-lg.png');
