@@ -151,10 +151,10 @@ body {
   );
   text-align: center;
 }
-.container-contant h3{
+.container-contant h2{
   text-align: center;
   color: #34495e;
-  font-size: 36px; 
+  font-size: 26px; 
 }
 .container-contant .card-brand-introduction {
   height: auto;
@@ -176,8 +176,8 @@ body {
   font-size: 36px;
   font-weight: bold;
   margin-bottom: 20px;
-  margin-top: 20px;
-  color: #2c3e50;
+  margin-top: 10px;
+  color: #2d343c;
 }
 .container-contant .card-brand-introduction img {
   max-width: 100%;
@@ -185,6 +185,7 @@ body {
   border-radius: 16px; 
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
   transition: transform 0.3s, box-shadow 0.3s; 
+  margin-bottom: 10px;
 }
 
 .container-contant .card-brand-introduction img:hover {
@@ -196,6 +197,7 @@ body {
 .container-contant .card-brand-introduction p {
   text-align: center;
   color: #34495e; 
+  margin-top: 10px;
 }
 
 .card-group {
@@ -217,12 +219,6 @@ body {
   margin-bottom: 20px;
 }
 
-.card:hover {
-  background: #e5f7f7; 
-  box-shadow: 0 4px 6px rgba(158, 192, 192, 0.5); 
-  border: 1px solid #9ec0c0; 
-  border-radius: 80px;
-}
 
 @media (max-width: 767px) {
   .card {
@@ -238,14 +234,18 @@ body {
   height: 400px;
   border-radius: 8px;
 }
+.container-contant img:hover {
+  background: #e5f7f7; 
+  box-shadow: 0 4px 6px rgba(158, 192, 192, 0.5); 
+  border: 1px solid #9ec0c0; 
+}
 
-.container-contant h2 {
+.container-contant h3 {
   padding-top: 16px;
   padding-bottom: 16px;
-  font-family: Noto Sans;
-  font-size: 28px;
+  font-size: 22px;
   font-weight: 700;
-  text-align: start;
+  text-align: center;
   color: #2c3e50; 
   margin-bottom: 8px;
 }
@@ -255,12 +255,13 @@ body {
   color: #34495e; 
   line-height: 1.5;
   margin-bottom: 16px;
-  text-align: start
+  text-align: center;
 }
 
 .container-contant .tags {
   display: flex;
   line-height: 1.5;
+  justify-content: center;
 }
 
 .container-contant .tag {
