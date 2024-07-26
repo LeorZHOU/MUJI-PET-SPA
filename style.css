@@ -443,19 +443,21 @@ body {
     padding-top: 20px;
     padding-bottom: 20px;
     align-items: center;
+    line-height: 0.1;
   }
-  .footer-inner-right{
-    display: flex;
-  }
+
   .footer-contant p, .footer-logo span{
     font-size: 20px;
+
   }
-  .footer-contant p{
-    line-height: 30px;
-  }
+
   .footer-contant span{
-    line-height: 30px;
-  }
+    line-height: 1.5;
+  } 
+  .footer-contant p{
+    line-height: 1.5;
+  } 
+
   .footer-contant span a{
     color: #c1c1c1;
   }
