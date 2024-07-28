@@ -41,3 +41,22 @@ function changeImage() {
   }
 }
 setInterval(changeImage, 2000);
+
+document.addEventListener("DOMContentLoaded", () => {
+  let dialog = document.querySelector(".dialog");
+  let btn = document.querySelector(".btn");
+  btn.addEventListener("click", () => {
+    dialog.style.display = "block";
+  });
+  let closeDialog = document.querySelector(".closeDialog");
+  closeDialog.addEventListener("click", () => {
+    dialog.style.display = "none";
+    // console.log("Hello");
+  });
+});
+
+$(document).ready(function () {
+            $('.animated-text').addClass('animate__animated animate__bounce').one('animationend', function () {
+                $(this).removeClass('animate__animated animate__bounce');
+            });
+        });

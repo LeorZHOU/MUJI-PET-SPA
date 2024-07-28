@@ -243,7 +243,6 @@ body {
         margin-right: 0px;
     }
 }
-
   .banner-item ul{
     display: flex;
     gap: 24px;
@@ -263,16 +262,15 @@ body {
         margin-top: 20px;
     }
   }
-  .banner-item ul li{
+  .banner-item ul .banner-item-list{
     background: #f7f9f9;
-    border:1px solid #e0e0e0;
     border-radius: 8px;
     cursor: pointer;
     padding: 15px;
     width: 300px;
     margin-bottom: 15px;
   }
-  .banner-item ul li h5{
+  .banner-item ul .banner-item-list h5{
     color: #0056b3;
     font-size: 18px;
     font-weight: bold;
@@ -286,6 +284,132 @@ body {
     vertical-align: baseline;
     color: #333
   }
+/* dialog */
+  .banner-item .btn {
+  z-index: 70;
+  background-color: #e5f7f7; 
+  border: 1px solid #d4e7e7; 
+  border-radius: 25px;
+  color: #333; 
+  padding: 15px 30px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, transform 0.3s;
+}
+@media(max-width:992px){
+  .banner-item .btn{
+    justify-content: center;
+  }
+}
+
+.banner-item .btn:hover {
+  background-color: #cde2e2; 
+  transform: scale(1.05);
+}
+
+.banner-item .btn:active {
+  background-color: #b6d1d1; 
+  transform: scale(1);
+}
+
+.banner-item .btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
+}
+.banner-item .dialog {
+  display: none;
+  position: fixed;
+  max-height: calc(80vh - 75px);
+  overflow-y: auto;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(229, 245, 245);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 50px;
+  z-index: 1000;
+  font-size: 15px;
+  text-align: center;
+}
+@media(max-width:992px){
+  .banner-item .dialog{
+    max-height: auto;
+    max-width: 80%;
+    text-align: center;
+  }
+}
+@media(max-width:767px){
+  .banner-item .dialog{
+    max-height: auto;
+    max-width: 80%;
+  }
+}
+.banner-item .dialog h6{
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+@media(max-width:992px){
+  .banner-item .dialog h6{
+    font-size: 20px;
+  }
+}
+@media(max-width:767px){
+  .banner-item .dialog h6{
+    font-size: 24px;
+  }
+}
+.banner-item .dialog .animated-text{
+  background-color: rgb(229, 245, 245);
+  max-width: 100%;
+  text-align: left;
+}
+.banner-item .dialog .animated-text li{
+  list-style: block;
+  margin-bottom: 20px;
+}
+@media(max-width:992px){
+  .banner-item .dialog h6{
+    font-size: 20px;
+  }
+}
+@media(max-width:767px){
+  .banner-item .dialog li{
+  font-size: 12px;
+}
+  .banner-item .dialog p{
+    font-size: 12px;
+  }
+}
+.banner-item .dialog .span1{
+  background: yellow;
+  color:red;
+}
+.banner-item .dialog-content {
+  position: relative;
+}
+
+.banner-item .closeDialog {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  transition: color 0.3s;
+}
+
+.banner-item .closeDialog:hover {
+  color: #007bff;
+}
+
+
+/* paw */
  .banner .decorate{
   position: absolute;
   z-index: 50;
