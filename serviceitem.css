@@ -142,7 +142,7 @@ body {
   box-sizing: border-box;
   padding: 10px;
   position: relative;
-  z-index: 5;
+  z-index:5;
   margin: 0 auto;
   overflow: hidden;
   background: linear-gradient(180deg,hsla(0,0%,100%,0),hsla(18,62%,97%,.5) 32.29%,#e5f7f7 67.21%);
@@ -330,7 +330,7 @@ body {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   padding: 50px;
-  z-index: 1000;
+  z-index: 12;
   font-size: 15px;
   text-align: center;
 }
@@ -498,6 +498,7 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    z-index: 5px;
 }
 @media(max-width:767px){
     .footer{
