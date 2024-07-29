@@ -5,7 +5,7 @@ body {
     padding-top: 180px;
     font-family: "Arial", "LiHei Pro", "黑體-繁", "微軟正黑體", sans-serif;
 }
-
+/* header */
 .header {
     background: #fff;
     border-bottom: 1px solid #F1F1F1;
@@ -148,7 +148,6 @@ body {
   background: linear-gradient(180deg,hsla(0,0%,100%,0),hsla(18,62%,97%,.5) 32.29%,#e5f7f7 67.21%);
 }
  .banner-contanct{
-  /* max-width: 1320px; */
   margin: 0 auto;
   padding: 12px;
  }
@@ -246,6 +245,8 @@ body {
   bottom: -10px;
   right: -20px;
  }
+
+/* paw */
  .banner .decorate{
   position: absolute;
   z-index: 50;

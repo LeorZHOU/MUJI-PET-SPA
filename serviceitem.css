@@ -5,7 +5,7 @@ body {
     padding-top: 180px;
     font-family: "Arial", "LiHei Pro", "黑體-繁", "微軟正黑體", sans-serif;
 }
-
+/* header */
 .header {
     background: #fff;
     border-bottom: 1px solid #F1F1F1;
@@ -284,7 +284,7 @@ body {
     vertical-align: baseline;
     color: #333
   }
-/* dialog */
+/* dialog btn*/
   .banner-item .btn {
   z-index: 70;
   background-color: #e5f7f7; 
@@ -336,15 +336,13 @@ body {
 }
 @media(max-width:992px){
   .banner-item .dialog{
-    max-height: auto;
     max-width: 80%;
     text-align: center;
   }
 }
 @media(max-width:767px){
   .banner-item .dialog{
-    max-height: auto;
-    max-width: 80%;
+    padding: 30px;
   }
 }
 .banner-item .dialog h6{
@@ -379,10 +377,11 @@ body {
 }
 @media(max-width:767px){
   .banner-item .dialog li{
-  font-size: 12px;
+  font-size: 13px;
 }
   .banner-item .dialog p{
-    font-size: 12px;
+    font-size: 13px;
+    text-align: start;
   }
 }
 .banner-item .dialog .span1{
